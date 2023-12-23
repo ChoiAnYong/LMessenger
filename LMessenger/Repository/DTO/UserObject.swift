@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  UserObject.swift
 //  LMessenger
 //
 //  Created by 최안용 on 12/22/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct User {
+struct UserObject: Codable {
     var id: String
     var name: String
     var phoneNumber: String?
@@ -15,8 +15,8 @@ struct User {
     var description: String?
 }
 
-extension User {
-    func toObject() -> UserObject {
+extension UserObject {
+    func toModel() -> User {
         .init(id: id,
               name: name,
               phoneNumber: phoneNumber,
@@ -25,14 +25,3 @@ extension User {
         )
     }
 }
-
-extension User {
-    static var stub1: User {
-        .init(id: "user1_id", name: "김하늘")
-    }
-
-    static var stub2: User {
-        .init(id: "user2_id", name: "김코랄")
-    }
-}
- 
