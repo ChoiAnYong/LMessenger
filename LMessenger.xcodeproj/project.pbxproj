@@ -50,6 +50,7 @@
 		AD6464F32B243F4F00A254E3 /* LMessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6464F22B243F4F00A254E3 /* LMessengerUITests.swift */; };
 		AD6464F52B243F4F00A254E3 /* LMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6464F42B243F4F00A254E3 /* LMessengerUITestsLaunchTests.swift */; };
 		AD6465022B243F7900A254E3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6465012B243F7900A254E3 /* Colors.xcassets */; };
+		ADE853222B3AC2C900C68430 /* ContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE853212B3AC2C900C68430 /* ContactService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		AD6464F22B243F4F00A254E3 /* LMessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMessengerUITests.swift; sourceTree = "<group>"; };
 		AD6464F42B243F4F00A254E3 /* LMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AD6465012B243F7900A254E3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		ADE853212B3AC2C900C68430 /* ContactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 				AD5DF8032B32E3E000E58710 /* AuthenticationService.swift */,
 				AD50A9752B358C0100D88819 /* ServiceError.swift */,
 				AD50C8B22B35A9FE002C8E8B /* UserService.swift */,
+				ADE853212B3AC2C900C68430 /* ContactService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				AD0BA48A2B382180005F1E36 /* ErrorView.swift in Sources */,
 				AD0BA4882B3820FE005F1E36 /* LoadingView.swift in Sources */,
 				AD0BA4832B381F8C005F1E36 /* Phase.swift in Sources */,
+				ADE853222B3AC2C900C68430 /* ContactService.swift in Sources */,
 				AD50A9852B35A2C600D88819 /* HomeViewModel.swift in Sources */,
 				AD5DF7F92B246A9E00E58710 /* AuthenticationViewModel.swift in Sources */,
 				AD0BA4862B3820C3005F1E36 /* PlaceholderView.swift in Sources */,
@@ -710,6 +714,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LMessenger/Info.plist;
+				INFOPLIST_KEY_NSContactsUsageDescription = "친구 목록을 가져옵니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -739,6 +744,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LMessenger/Info.plist;
+				INFOPLIST_KEY_NSContactsUsageDescription = "친구 목록을 가져옵니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
