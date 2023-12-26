@@ -51,6 +51,9 @@
 		AD6464F52B243F4F00A254E3 /* LMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6464F42B243F4F00A254E3 /* LMessengerUITestsLaunchTests.swift */; };
 		AD6465022B243F7900A254E3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6465012B243F7900A254E3 /* Colors.xcassets */; };
 		ADE853222B3AC2C900C68430 /* ContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE853212B3AC2C900C68430 /* ContactService.swift */; };
+		ADE853242B3B07E400C68430 /* MyProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE853232B3B07E400C68430 /* MyProfileViewModel.swift */; };
+		ADE853262B3B0CF000C68430 /* MyProfileMenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE853252B3B0CF000C68430 /* MyProfileMenuType.swift */; };
+		ADE853282B3B116D00C68430 /* MyProfileDescEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE853272B3B116D00C68430 /* MyProfileDescEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +119,9 @@
 		AD6464F42B243F4F00A254E3 /* LMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AD6465012B243F7900A254E3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		ADE853212B3AC2C900C68430 /* ContactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactService.swift; sourceTree = "<group>"; };
+		ADE853232B3B07E400C68430 /* MyProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewModel.swift; sourceTree = "<group>"; };
+		ADE853252B3B0CF000C68430 /* MyProfileMenuType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileMenuType.swift; sourceTree = "<group>"; };
+		ADE853272B3B116D00C68430 /* MyProfileDescEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileDescEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,9 @@
 			children = (
 				AD0BA48E2B382393005F1E36 /* MyProfileView.swift */,
 				AD0BA4902B3823A1005F1E36 /* OtherProfileView.swift */,
+				ADE853232B3B07E400C68430 /* MyProfileViewModel.swift */,
+				ADE853252B3B0CF000C68430 /* MyProfileMenuType.swift */,
+				ADE853272B3B116D00C68430 /* MyProfileDescEditView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -537,6 +546,7 @@
 				AD50A9832B35A17B00D88819 /* ChatListView.swift in Sources */,
 				AD5DF7EC2B24478200E58710 /* Color+Extension.swift in Sources */,
 				AD50A9812B35A16900D88819 /* HomeView.swift in Sources */,
+				ADE853242B3B07E400C68430 /* MyProfileViewModel.swift in Sources */,
 				AD50A96E2B357FB900D88819 /* LoginButtonStyle.swift in Sources */,
 				AD50C8BA2B36D802002C8E8B /* Constant.swift in Sources */,
 				AD6464D82B243F4E00A254E3 /* LMessengerApp.swift in Sources */,
@@ -547,6 +557,8 @@
 				AD50A9762B358C0100D88819 /* ServiceError.swift in Sources */,
 				AD0BA48F2B382393005F1E36 /* MyProfileView.swift in Sources */,
 				AD5DF80A2B32E96300E58710 /* MainTabView.swift in Sources */,
+				ADE853282B3B116D00C68430 /* MyProfileDescEditView.swift in Sources */,
+				ADE853262B3B0CF000C68430 /* MyProfileMenuType.swift in Sources */,
 				AD0BA4912B3823A1005F1E36 /* OtherProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
