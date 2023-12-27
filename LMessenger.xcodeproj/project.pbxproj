@@ -76,6 +76,9 @@
 		ADEB3E612B3C557100F1FCD8 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB3E602B3C557100F1FCD8 /* NavigationRouter.swift */; };
 		ADEB3E642B3C571200F1FCD8 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB3E632B3C571200F1FCD8 /* ChatView.swift */; };
 		ADEB3E672B3C573300F1FCD8 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB3E662B3C573300F1FCD8 /* SearchView.swift */; };
+		ADEB3E692B3C6AEC00F1FCD8 /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB3E682B3C6AEC00F1FCD8 /* ChatListViewModel.swift */; };
+		ADEB3E6B2B3C6CCD00F1FCD8 /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB3E6A2B3C6CCD00F1FCD8 /* SearchButton.swift */; };
+		ADEB3E6D2B3C6DEE00F1FCD8 /* NavigationRoutingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB3E6C2B3C6DEE00F1FCD8 /* NavigationRoutingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +167,9 @@
 		ADEB3E602B3C557100F1FCD8 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
 		ADEB3E632B3C571200F1FCD8 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		ADEB3E662B3C573300F1FCD8 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		ADEB3E682B3C6AEC00F1FCD8 /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
+		ADEB3E6A2B3C6CCD00F1FCD8 /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
+		ADEB3E6C2B3C6DEE00F1FCD8 /* NavigationRoutingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoutingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +209,7 @@
 				AD0BA4852B3820C3005F1E36 /* PlaceholderView.swift */,
 				AD0BA4872B3820FE005F1E36 /* LoadingView.swift */,
 				AD0BA4892B382180005F1E36 /* ErrorView.swift */,
+				ADEB3E6A2B3C6CCD00F1FCD8 /* SearchButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				AD50A9822B35A17B00D88819 /* ChatListView.swift */,
+				ADEB3E682B3C6AEC00F1FCD8 /* ChatListViewModel.swift */,
 			);
 			path = ChatList;
 			sourceTree = "<group>";
@@ -514,6 +522,7 @@
 			children = (
 				ADEB3E5E2B3C554900F1FCD8 /* NavigationDestination.swift */,
 				ADEB3E602B3C557100F1FCD8 /* NavigationRouter.swift */,
+				ADEB3E6C2B3C6DEE00F1FCD8 /* NavigationRoutingView.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -719,16 +728,19 @@
 				AD6464D82B243F4E00A254E3 /* LMessengerApp.swift in Sources */,
 				AD50A96C2B357EA500D88819 /* LoginView.swift in Sources */,
 				ADEB3E452B3C1EE700F1FCD8 /* MemoryStorage.swift in Sources */,
+				ADEB3E6D2B3C6DEE00F1FCD8 /* NavigationRoutingView.swift in Sources */,
 				AD50A97A2B3594F700D88819 /* SHA256.swift in Sources */,
 				ADEB3E562B3C4D4B00F1FCD8 /* ChatRoomObject.swift in Sources */,
 				AD5DF8042B32E3E000E58710 /* AuthenticationService.swift in Sources */,
 				AD50A97B2B3594F700D88819 /* RandomNonceString.swift in Sources */,
+				ADEB3E6B2B3C6CCD00F1FCD8 /* SearchButton.swift in Sources */,
 				ADEB3E492B3C281900F1FCD8 /* URLImageView.swift in Sources */,
 				AD50A9762B358C0100D88819 /* ServiceError.swift in Sources */,
 				AD0BA48F2B382393005F1E36 /* MyProfileView.swift in Sources */,
 				AD5DF80A2B32E96300E58710 /* MainTabView.swift in Sources */,
 				ADEB3E4C2B3C283900F1FCD8 /* URLImageViewModel.swift in Sources */,
 				ADEB3E5F2B3C554900F1FCD8 /* NavigationDestination.swift in Sources */,
+				ADEB3E692B3C6AEC00F1FCD8 /* ChatListViewModel.swift in Sources */,
 				ADEB3E5A2B3C505D00F1FCD8 /* ChatRoomService.swift in Sources */,
 				ADEB3E672B3C573300F1FCD8 /* SearchView.swift in Sources */,
 				ADE853282B3B116D00C68430 /* MyProfileDescEditView.swift in Sources */,
