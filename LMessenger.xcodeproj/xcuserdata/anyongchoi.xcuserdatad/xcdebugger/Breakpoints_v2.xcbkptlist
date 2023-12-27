@@ -3,4 +3,118 @@
    uuid = "C37957F0-223D-4900-8615-FEE18AF55724"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F5179E3-D598-4E92-B3C5-FBF447818DAA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LMessenger/Service/ImageCache/ImageCacheService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "image(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1F5179E3-D598-4E92-B3C5-FBF447818DAA - 1e81520d243c998c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt; in LMessenger.ImageCacheService.image(for: Swift.String) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt;"
+                  moduleName = "LMessenger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anyongchoi/Desktop/LMessenger/LMessenger/Service/ImageCache/ImageCacheService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "1F5179E3-D598-4E92-B3C5-FBF447818DAA - 1e81520d243c998c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt; in LMessenger.ImageCacheService.image(for: Swift.String) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt;"
+                  moduleName = "LMessenger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anyongchoi/Desktop/LMessenger/LMessenger/Service/ImageCache/ImageCacheService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "284">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9EE70B6-86C2-4EF8-BE41-9716788A832D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LMessenger/Service/ImageCache/ImageCacheService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "remoteImage(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC53ECC8-DFED-4B25-AD00-5FAFC567D765"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LMessenger/Service/ImageCache/ImageCacheService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "imageWithDiskCache(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BC53ECC8-DFED-4B25-AD00-5FAFC567D765 - 6c1c9137e2211f8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt; in LMessenger.ImageCacheService.imageWithDiskCache(for: Swift.String) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt;"
+                  moduleName = "LMessenger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anyongchoi/Desktop/LMessenger/LMessenger/Service/ImageCache/ImageCacheService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "BC53ECC8-DFED-4B25-AD00-5FAFC567D765 - 6c1c9137e2211f8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt; in LMessenger.ImageCacheService.imageWithDiskCache(for: Swift.String) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;__C.UIImage&gt;, Swift.Never&gt;"
+                  moduleName = "LMessenger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anyongchoi/Desktop/LMessenger/LMessenger/Service/ImageCache/ImageCacheService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "352">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
