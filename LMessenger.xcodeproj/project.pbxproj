@@ -86,6 +86,10 @@
 		ADEB3E772B3D6D8700F1FCD8 /* ChatItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB3E762B3D6D8700F1FCD8 /* ChatItemView.swift */; };
 		ADEB3E792B3D6DA100F1FCD8 /* ChatItemDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB3E782B3D6DA100F1FCD8 /* ChatItemDirection.swift */; };
 		ADEB3E7B2B3D770900F1FCD8 /* KeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB3E7A2B3D770900F1FCD8 /* KeyboardToolbar.swift */; };
+		ADEB3E7D2B3D8A0000F1FCD8 /* ChatDBRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB3E7C2B3D8A0000F1FCD8 /* ChatDBRepository.swift */; };
+		ADEB3E7F2B3D8B2B00F1FCD8 /* ChatObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB3E7E2B3D8B2B00F1FCD8 /* ChatObject.swift */; };
+		ADEB3E812B3D8C3800F1FCD8 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB3E802B3D8C3800F1FCD8 /* ChatService.swift */; };
+		ADEB3E832B3DB05600F1FCD8 /* ChatImageItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB3E822B3DB05600F1FCD8 /* ChatImageItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +188,10 @@
 		ADEB3E762B3D6D8700F1FCD8 /* ChatItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatItemView.swift; sourceTree = "<group>"; };
 		ADEB3E782B3D6DA100F1FCD8 /* ChatItemDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatItemDirection.swift; sourceTree = "<group>"; };
 		ADEB3E7A2B3D770900F1FCD8 /* KeyboardToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardToolbar.swift; sourceTree = "<group>"; };
+		ADEB3E7C2B3D8A0000F1FCD8 /* ChatDBRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDBRepository.swift; sourceTree = "<group>"; };
+		ADEB3E7E2B3D8B2B00F1FCD8 /* ChatObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatObject.swift; sourceTree = "<group>"; };
+		ADEB3E802B3D8C3800F1FCD8 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		ADEB3E822B3DB05600F1FCD8 /* ChatImageItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatImageItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +298,7 @@
 				AD50C8B02B35A9E3002C8E8B /* UserDBRepository.swift */,
 				AD50C8B72B35ABE7002C8E8B /* DBError.swift */,
 				ADEB3E532B3C4CDF00F1FCD8 /* ChatRoomDBRepository.swift */,
+				ADEB3E7C2B3D8A0000F1FCD8 /* ChatDBRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -299,6 +308,7 @@
 			children = (
 				AD50C8B52B35AB91002C8E8B /* UserObject.swift */,
 				ADEB3E552B3C4D4B00F1FCD8 /* ChatRoomObject.swift */,
+				ADEB3E7E2B3D8B2B00F1FCD8 /* ChatObject.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -327,6 +337,7 @@
 				AD50C8B22B35A9FE002C8E8B /* UserService.swift */,
 				ADE853212B3AC2C900C68430 /* ContactService.swift */,
 				ADEB3E592B3C505D00F1FCD8 /* ChatRoomService.swift */,
+				ADEB3E802B3D8C3800F1FCD8 /* ChatService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -547,11 +558,9 @@
 		ADEB3E622B3C56FC00F1FCD8 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				ADEB3E842B3DB06B00F1FCD8 /* Subview */,
 				ADEB3E632B3C571200F1FCD8 /* ChatView.swift */,
 				ADEB3E6E2B3D62E000F1FCD8 /* ChatViewModel.swift */,
-				ADEB3E762B3D6D8700F1FCD8 /* ChatItemView.swift */,
-				ADEB3E782B3D6DA100F1FCD8 /* ChatItemDirection.swift */,
-				ADEB3E7A2B3D770900F1FCD8 /* KeyboardToolbar.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -562,6 +571,17 @@
 				ADEB3E662B3C573300F1FCD8 /* SearchView.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		ADEB3E842B3DB06B00F1FCD8 /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+				ADEB3E762B3D6D8700F1FCD8 /* ChatItemView.swift */,
+				ADEB3E782B3D6DA100F1FCD8 /* ChatItemDirection.swift */,
+				ADEB3E7A2B3D770900F1FCD8 /* KeyboardToolbar.swift */,
+				ADEB3E822B3DB05600F1FCD8 /* ChatImageItemView.swift */,
+			);
+			path = Subview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -719,9 +739,11 @@
 				AD0BA48A2B382180005F1E36 /* ErrorView.swift in Sources */,
 				AD0BA4882B3820FE005F1E36 /* LoadingView.swift in Sources */,
 				AD0BA4832B381F8C005F1E36 /* Phase.swift in Sources */,
+				ADEB3E832B3DB05600F1FCD8 /* ChatImageItemView.swift in Sources */,
 				ADEB3E5C2B3C511500F1FCD8 /* ChatRoom.swift in Sources */,
 				ADEB3E732B3D6A7100F1FCD8 /* ChatData.swift in Sources */,
 				ADE853222B3AC2C900C68430 /* ContactService.swift in Sources */,
+				ADEB3E7F2B3D8B2B00F1FCD8 /* ChatObject.swift in Sources */,
 				AD50A9852B35A2C600D88819 /* HomeViewModel.swift in Sources */,
 				AD5DF7F92B246A9E00E58710 /* AuthenticationViewModel.swift in Sources */,
 				AD0BA4862B3820C3005F1E36 /* PlaceholderView.swift in Sources */,
@@ -754,6 +776,7 @@
 				ADEB3E452B3C1EE700F1FCD8 /* MemoryStorage.swift in Sources */,
 				ADEB3E6D2B3C6DEE00F1FCD8 /* NavigationRoutingView.swift in Sources */,
 				AD50A97A2B3594F700D88819 /* SHA256.swift in Sources */,
+				ADEB3E7D2B3D8A0000F1FCD8 /* ChatDBRepository.swift in Sources */,
 				ADEB3E562B3C4D4B00F1FCD8 /* ChatRoomObject.swift in Sources */,
 				ADEB3E792B3D6DA100F1FCD8 /* ChatItemDirection.swift in Sources */,
 				AD5DF8042B32E3E000E58710 /* AuthenticationService.swift in Sources */,
@@ -768,6 +791,7 @@
 				ADEB3E5F2B3C554900F1FCD8 /* NavigationDestination.swift in Sources */,
 				ADEB3E692B3C6AEC00F1FCD8 /* ChatListViewModel.swift in Sources */,
 				ADEB3E5A2B3C505D00F1FCD8 /* ChatRoomService.swift in Sources */,
+				ADEB3E812B3D8C3800F1FCD8 /* ChatService.swift in Sources */,
 				ADEB3E712B3D695A00F1FCD8 /* Chat.swift in Sources */,
 				ADEB3E672B3C573300F1FCD8 /* SearchView.swift in Sources */,
 				ADE853282B3B116D00C68430 /* MyProfileDescEditView.swift in Sources */,
