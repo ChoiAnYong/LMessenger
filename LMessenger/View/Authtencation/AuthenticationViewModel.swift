@@ -21,6 +21,7 @@ class AuthenticationViewModel: ObservableObject {
         case googleLogin
         case appleLogin(ASAuthorizationAppleIDRequest)
         case aplleLoginCompletion(Result<ASAuthorization, Error>)
+        case requestPushNotification
         case logout
     }
     
@@ -85,6 +86,11 @@ class AuthenticationViewModel: ObservableObject {
             } else if case let .failure(error) = request {
                 isLoading = false
                 print(error.localizedDescription)
+            }
+            
+        case .requestPushNotification:
+            container.services.pushNotificationService.requestAuthorization { granted in
+                // TODO: 
             }
             
         case .logout:
