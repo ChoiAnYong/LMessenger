@@ -11,6 +11,9 @@
 		AD0AE8AC2B443D700093B2EA /* PushObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0AE8AB2B443D700093B2EA /* PushObject.swift */; };
 		AD0AE8AE2B46DE030093B2EA /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0AE8AD2B46DE030093B2EA /* SearchViewModel.swift */; };
 		AD0AE8B02B46DFDB0093B2EA /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0AE8AF2B46DFDB0093B2EA /* SearchBar.swift */; };
+		AD0AE8B32B47DBC80093B2EA /* Search.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD0AE8B12B47DBC80093B2EA /* Search.xcdatamodeld */; };
+		AD0AE8B62B47DC680093B2EA /* SearchDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0AE8B52B47DC680093B2EA /* SearchDataController.swift */; };
+		AD0AE8B82B47DE6D0093B2EA /* RecentSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0AE8B72B47DE6D0093B2EA /* RecentSearchView.swift */; };
 		AD0BA4832B381F8C005F1E36 /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BA4822B381F8C005F1E36 /* Phase.swift */; };
 		AD0BA4862B3820C3005F1E36 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BA4852B3820C3005F1E36 /* PlaceholderView.swift */; };
 		AD0BA4882B3820FE005F1E36 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BA4872B3820FE005F1E36 /* LoadingView.swift */; };
@@ -120,6 +123,9 @@
 		AD0AE8AB2B443D700093B2EA /* PushObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushObject.swift; sourceTree = "<group>"; };
 		AD0AE8AD2B46DE030093B2EA /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		AD0AE8AF2B46DFDB0093B2EA /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		AD0AE8B22B47DBC80093B2EA /* Search.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Search.xcdatamodel; sourceTree = "<group>"; };
+		AD0AE8B52B47DC680093B2EA /* SearchDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataController.swift; sourceTree = "<group>"; };
+		AD0AE8B72B47DE6D0093B2EA /* RecentSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchView.swift; sourceTree = "<group>"; };
 		AD0BA4822B381F8C005F1E36 /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
 		AD0BA4852B3820C3005F1E36 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		AD0BA4872B3820FE005F1E36 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -237,6 +243,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD0AE8B42B47DC3F0093B2EA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AD0AE8B52B47DC680093B2EA /* SearchDataController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		AD0BA4842B3820A7005F1E36 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +345,7 @@
 			children = (
 				AD0BA4842B3820A7005F1E36 /* View */,
 				ADEB3E5D2B3C552300F1FCD8 /* Navigation */,
+				AD0AE8B42B47DC3F0093B2EA /* Search */,
 				AD5DF7F12B2468BF00E58710 /* DIContainer.swift */,
 				AD50C8B92B36D802002C8E8B /* Constant.swift */,
 				AD0BA4822B381F8C005F1E36 /* Phase.swift */,
@@ -474,6 +489,7 @@
 				AD6464DB2B243F4F00A254E3 /* Assets.xcassets */,
 				AD6465012B243F7900A254E3 /* Colors.xcassets */,
 				AD5DF7EE2B24659000E58710 /* LaunchScreen.storyboard */,
+				AD0AE8B12B47DBC80093B2EA /* Search.xcdatamodeld */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -588,6 +604,7 @@
 				ADEB3E662B3C573300F1FCD8 /* SearchView.swift */,
 				AD0AE8AD2B46DE030093B2EA /* SearchViewModel.swift */,
 				AD0AE8AF2B46DFDB0093B2EA /* SearchBar.swift */,
+				AD0AE8B72B47DE6D0093B2EA /* RecentSearchView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -768,11 +785,13 @@
 				AD50A9852B35A2C600D88819 /* HomeViewModel.swift in Sources */,
 				AD5DF7F92B246A9E00E58710 /* AuthenticationViewModel.swift in Sources */,
 				AD0BA4862B3820C3005F1E36 /* PlaceholderView.swift in Sources */,
+				AD0AE8B62B47DC680093B2EA /* SearchDataController.swift in Sources */,
 				ADEB3E422B3C1E4000F1FCD8 /* ImageCacheService.swift in Sources */,
 				AD0BA48C2B3822A6005F1E36 /* HomeModalDestination.swift in Sources */,
 				ADEB3E542B3C4CDF00F1FCD8 /* ChatRoomDBRepository.swift in Sources */,
 				AD5DF7F52B24694700E58710 /* Services.swift in Sources */,
 				ADEB3E3B2B3C0F4400F1FCD8 /* UploadProvider.swift in Sources */,
+				AD0AE8B32B47DBC80093B2EA /* Search.xcdatamodeld in Sources */,
 				AD50C8B32B35A9FE002C8E8B /* UserService.swift in Sources */,
 				ADEB3E502B3C45CB00F1FCD8 /* OtherProfileViewModel.swift in Sources */,
 				AD50C8B12B35A9E3002C8E8B /* UserDBRepository.swift in Sources */,
@@ -783,6 +802,7 @@
 				AD0AE8B02B46DFDB0093B2EA /* SearchBar.swift in Sources */,
 				ADEB3E612B3C557100F1FCD8 /* NavigationRouter.swift in Sources */,
 				AD5DF8002B32DFD900E58710 /* AppDelegate.swift in Sources */,
+				AD0AE8B82B47DE6D0093B2EA /* RecentSearchView.swift in Sources */,
 				AD50A9832B35A17B00D88819 /* ChatListView.swift in Sources */,
 				AD5DF7EC2B24478200E58710 /* Color+Extension.swift in Sources */,
 				ADA2D0512B3B343B002C40B2 /* PhotoImage.swift in Sources */,
@@ -1206,6 +1226,19 @@
 			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		AD0AE8B12B47DBC80093B2EA /* Search.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD0AE8B22B47DBC80093B2EA /* Search.xcdatamodel */,
+			);
+			currentVersion = AD0AE8B22B47DBC80093B2EA /* Search.xcdatamodel */;
+			path = Search.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AD6464CC2B243F4E00A254E3 /* Project object */;
 }
