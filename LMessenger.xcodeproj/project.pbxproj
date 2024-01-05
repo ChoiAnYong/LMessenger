@@ -14,6 +14,11 @@
 		AD0AE8B32B47DBC80093B2EA /* Search.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD0AE8B12B47DBC80093B2EA /* Search.xcdatamodeld */; };
 		AD0AE8B62B47DC680093B2EA /* SearchDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0AE8B52B47DC680093B2EA /* SearchDataController.swift */; };
 		AD0AE8B82B47DE6D0093B2EA /* RecentSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0AE8B72B47DE6D0093B2EA /* RecentSearchView.swift */; };
+		AD0AE8BB2B47FD140093B2EA /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0AE8BA2B47FD140093B2EA /* SettingView.swift */; };
+		AD0AE8BD2B47FD230093B2EA /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0AE8BC2B47FD230093B2EA /* SettingViewModel.swift */; };
+		AD0AE8BF2B47FD300093B2EA /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0AE8BE2B47FD300093B2EA /* SettingItem.swift */; };
+		AD0AE8C22B47FF840093B2EA /* AppearnceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0AE8C12B47FF840093B2EA /* AppearnceType.swift */; };
+		AD0AE8C42B4806B30093B2EA /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0AE8C32B4806B30093B2EA /* AppearanceController.swift */; };
 		AD0BA4832B381F8C005F1E36 /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BA4822B381F8C005F1E36 /* Phase.swift */; };
 		AD0BA4862B3820C3005F1E36 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BA4852B3820C3005F1E36 /* PlaceholderView.swift */; };
 		AD0BA4882B3820FE005F1E36 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BA4872B3820FE005F1E36 /* LoadingView.swift */; };
@@ -126,6 +131,11 @@
 		AD0AE8B22B47DBC80093B2EA /* Search.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Search.xcdatamodel; sourceTree = "<group>"; };
 		AD0AE8B52B47DC680093B2EA /* SearchDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataController.swift; sourceTree = "<group>"; };
 		AD0AE8B72B47DE6D0093B2EA /* RecentSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchView.swift; sourceTree = "<group>"; };
+		AD0AE8BA2B47FD140093B2EA /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		AD0AE8BC2B47FD230093B2EA /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		AD0AE8BE2B47FD300093B2EA /* SettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItem.swift; sourceTree = "<group>"; };
+		AD0AE8C12B47FF840093B2EA /* AppearnceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearnceType.swift; sourceTree = "<group>"; };
+		AD0AE8C32B4806B30093B2EA /* AppearanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
 		AD0BA4822B381F8C005F1E36 /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
 		AD0BA4852B3820C3005F1E36 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		AD0BA4872B3820FE005F1E36 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -251,6 +261,25 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		AD0AE8B92B47FCF10093B2EA /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				AD0AE8BA2B47FD140093B2EA /* SettingView.swift */,
+				AD0AE8BC2B47FD230093B2EA /* SettingViewModel.swift */,
+				AD0AE8BE2B47FD300093B2EA /* SettingItem.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		AD0AE8C02B47FF2A0093B2EA /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				AD0AE8C12B47FF840093B2EA /* AppearnceType.swift */,
+				AD0AE8C32B4806B30093B2EA /* AppearanceController.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
 		AD0BA4842B3820A7005F1E36 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +375,7 @@
 				AD0BA4842B3820A7005F1E36 /* View */,
 				ADEB3E5D2B3C552300F1FCD8 /* Navigation */,
 				AD0AE8B42B47DC3F0093B2EA /* Search */,
+				AD0AE8C02B47FF2A0093B2EA /* Appearance */,
 				AD5DF7F12B2468BF00E58710 /* DIContainer.swift */,
 				AD50C8B92B36D802002C8E8B /* Constant.swift */,
 				AD0BA4822B381F8C005F1E36 /* Phase.swift */,
@@ -382,6 +412,7 @@
 				AD50A97F2B35A15200D88819 /* ChatList */,
 				ADEB3E622B3C56FC00F1FCD8 /* Chat */,
 				ADEB3E652B3C571C00F1FCD8 /* Search */,
+				AD0AE8B92B47FCF10093B2EA /* Setting */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -815,9 +846,11 @@
 				ADEB3E3D2B3C103000F1FCD8 /* UploadService.swift in Sources */,
 				AD0AE8AC2B443D700093B2EA /* PushObject.swift in Sources */,
 				ADEB3E642B3C571200F1FCD8 /* ChatView.swift in Sources */,
+				AD0AE8BF2B47FD300093B2EA /* SettingItem.swift in Sources */,
 				AD6464D82B243F4E00A254E3 /* LMessengerApp.swift in Sources */,
 				AD50A96C2B357EA500D88819 /* LoginView.swift in Sources */,
 				ADEB3E452B3C1EE700F1FCD8 /* MemoryStorage.swift in Sources */,
+				AD0AE8BB2B47FD140093B2EA /* SettingView.swift in Sources */,
 				ADEB3E6D2B3C6DEE00F1FCD8 /* NavigationRoutingView.swift in Sources */,
 				AD50A97A2B3594F700D88819 /* SHA256.swift in Sources */,
 				ADEB3E7D2B3D8A0000F1FCD8 /* ChatDBRepository.swift in Sources */,
@@ -839,8 +872,11 @@
 				ADEB3E712B3D695A00F1FCD8 /* Chat.swift in Sources */,
 				ADEB3E672B3C573300F1FCD8 /* SearchView.swift in Sources */,
 				AD0AE8AA2B443CF80093B2EA /* PushNotificationProvider.swift in Sources */,
+				AD0AE8BD2B47FD230093B2EA /* SettingViewModel.swift in Sources */,
 				ADE853282B3B116D00C68430 /* MyProfileDescEditView.swift in Sources */,
+				AD0AE8C42B4806B30093B2EA /* AppearanceController.swift in Sources */,
 				ADE853262B3B0CF000C68430 /* MyProfileMenuType.swift in Sources */,
+				AD0AE8C22B47FF840093B2EA /* AppearnceType.swift in Sources */,
 				ADEB3E6F2B3D62E100F1FCD8 /* ChatViewModel.swift in Sources */,
 				AD0BA4912B3823A1005F1E36 /* OtherProfileView.swift in Sources */,
 			);
