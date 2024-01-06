@@ -25,12 +25,10 @@ class HomeViewModel: ObservableObject {
     var userId: String
     
     private var container: DIContainer
-    private var navigationRouter: NavigationRouter
     private var subscriptions = Set<AnyCancellable>()
     
-    init(container: DIContainer, navigationRouter: NavigationRouter, userId: String) {
+    init(container: DIContainer, userId: String) {
         self.container = container
-        self.navigationRouter = navigationRouter
         self.userId = userId
     }
     
@@ -80,7 +78,7 @@ class HomeViewModel: ObservableObject {
                     
                 } receiveValue: { [weak self] chatRoom in
                     guard let `self` = self else { return }
-                    self.navigationRouter.push(to: .chat(chatRoomId: chatRoom.chatRoomId,
+                    self.container.navigationRouter.push(to: .chat(chatRoomId: chatRoom.chatRoomId,
                                                          myUserId: self.userId,
                                                          otherUserId: otherUser.id))
                 }.store(in: &subscriptions)

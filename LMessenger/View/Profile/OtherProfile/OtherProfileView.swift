@@ -68,7 +68,7 @@ struct OtherProfileView: View {
                             .frame(width: 50, height: 50)
                         Text(menu.description)
                             .font(.system(size: 10))
-                            .foregroundColor(.BgWh)
+                            .foregroundColor(.WhiteFix)
                     }
                 }
             }

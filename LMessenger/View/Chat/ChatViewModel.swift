@@ -15,6 +15,7 @@ class ChatViewModel: ObservableObject {
         case load
         case addChat(String)
         case uploadImage(PhotosPickerItem?)
+        case pop
     }
     
     @Published var chatDataList: [ChatData] = []
@@ -126,6 +127,9 @@ class ChatViewModel: ObservableObject {
                 } receiveValue: { _ in
                     
                 }.store(in: &subscriptions)
+            
+        case .pop:
+            container.navigationRouter.pop()
         }
     }
 }
