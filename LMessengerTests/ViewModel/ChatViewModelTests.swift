@@ -51,3 +51,4 @@ final class ChatViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.chatDataList[2].chats.count, 1)
     }
 }
+//테스트
