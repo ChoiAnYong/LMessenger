@@ -35,11 +35,12 @@ struct RecentSearchView: View {
                                     objectContext.delete(result)
                                     try? objectContext.save()
                                 } label: {
-                                    Image("close_search")
+                                    Image("close_search", label: Text("검색어 삭제"))
                                         .resizable()
                                         .frame(width: 15, height: 15)
                                 }
                             }
+                            .accessibilityElement(children: .combine)
                         }
                     }
                 }
@@ -54,6 +55,7 @@ struct RecentSearchView: View {
                 .font(.system(size: 10, weight: .bold))
             Spacer()
         }
+        .accessibilityAddTraits(.isHeader)
     }
 }
 

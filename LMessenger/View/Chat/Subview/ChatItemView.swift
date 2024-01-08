@@ -36,12 +36,14 @@ struct ChatItemView: View {
             }
         }
         .padding(.horizontal, 35)
+        .padding(.bottom)
     }
     
     var dateView: some View {
         Text(date.toChatTime)
             .font(.system(size: 10))
             .foregroundColor(.GreyDeep)
+            .accessibilityLabel(Text(date.toChatTimeAccessibility))
     }
 }
 

@@ -45,13 +45,13 @@ struct HomeView: View {
         case .success:
             loadedView
                 .toolbar {
-                    Image("bookmark")
-                    Image("notifications")
-                    Image("person_add")
+                    Image(decorative: "bookmark")//decorative:를 추가하면 단순히 꾸밈요소로 판단하여 접근성 요소가 추각되지 않음
+                    Image(decorative: "notifications")
+                    Image(decorative: "person_add")
                     Button {
                         viewModel.send(action: .presentView(.setting))
                     } label: {
-                        Image("settings")
+                        Image("settings", label: Text("설정"))
                     }
                 }
         case .fail:
@@ -73,6 +73,7 @@ struct HomeView: View {
                 Text("친구")
                     .font(.system(size: 14))
                     .foregroundColor(.BkText)
+                    .accessibilityAddTraits(.isHeader)
                 Spacer()
             }
             .padding(.horizontal, 30)
@@ -83,22 +84,24 @@ struct HomeView: View {
             } else {
                 LazyVStack {
                     ForEach(viewModel.users, id: \.id) { user in
-                        Button {
-                            viewModel.send(action: .presentView(.otherProfile(user.id)))
-                        } label: {
-                            HStack(spacing: 8) {
-                                Image("person")
-                                    .resizable()
-                                    .frame(width: 40, height: 40)
-                                    .clipShape(Circle())
-                                Text(user.name)
-                                    .font(.system(size: 12))
-                                    .foregroundColor(.BkText)
-                                Spacer()
-                            }
+                        HStack(spacing: 8) {
+                            URLImageView(urlString: user.profileURL)
+                                .frame(width: 40, height: 40)
+                                .clipShape(Circle())
+                            Text(user.name)
+                                .font(.system(size: 12))
+                                .foregroundColor(.BkText)
+                            Spacer()
                         }
-                        .padding(.horizontal, 30)
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            viewModel.send(action: .presentView(.otherProfile(user.id)))
+                        }
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityLabel(user.name)
+                        .accessibilityAddTraits(.isButton)
                     }
+                    .padding(.horizontal, 30) 
                 }
             }
         }
@@ -117,8 +120,7 @@ struct HomeView: View {
             
             Spacer()
             
-            Image("person")
-                .resizable()
+            URLImageView(urlString: viewModel.myUser?.profileURL)
                 .frame(width: 52, height: 52)
                 .clipShape(Circle())
         }
@@ -126,6 +128,21 @@ struct HomeView: View {
         .onTapGesture {
             viewModel.send(action: .presentView(.myProfile))
         }
+        //combine를 이용한 그룹화
+        .accessibilityElement(children: .combine)
+        .accessibilityHint(Text("내 프로필을 보려면 이중탭하십시오."))
+        .accessibilityAction {
+            viewModel.send(action: .presentView(.myProfile))
+        }
+        //accessibilityRepresentation 사용하여 새로운 element로 대체
+//        .accessibilityRepresentation { //해당 접근성 요소를 아예 새로운 이 element로 대체하는 것이다.
+//            Button("내프로필보기") {
+//                viewModel.send(action: .presentView(.myProfile))
+//            }
+//        }
+        //ignore를 사용한 방법
+//        .accessibilityElement(children: .ignore)
+//        .accessibilityLabel(Text("내프로필보기"))
     }
     
     var emptyView: some View {
