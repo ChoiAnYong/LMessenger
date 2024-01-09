@@ -103,7 +103,8 @@ struct ChatView: View {
                         .accessibilityElement(children: .combine)
                     } else if let photoURL = chat.photoURL {
                         ChatImageItemView(urlString: photoURL,
-                                          direction: viewModel.getDirection(id: chat.userId))
+                                          direction: viewModel.getDirection(id: chat.userId),
+                                          date: chat.date)
                         .id(chat.chatId)
                         .accessibilityElement(children: .combine)
                         .accessibility(addTraits: .isImage)

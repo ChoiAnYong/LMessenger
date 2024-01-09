@@ -11,6 +11,8 @@ struct RecentSearchView: View {
     @Environment(\.managedObjectContext) var objectContext
     @FetchRequest(sortDescriptors: [SortDescriptor(\.date)]) var results: FetchedResults<SearchResult>
     
+    var onTapResult: ((String?) -> Void)
+    
     var body: some View {
         VStack(spacing: 0) {
             titleView
@@ -27,9 +29,13 @@ struct RecentSearchView: View {
                     LazyVStack {
                         ForEach(results, id: \.self) { result in
                             HStack {
-                                Text(result.name ?? "")
-                                    .font(.system(size: 14))
-                                    .foregroundColor(.BkText)
+                                Button {
+                                    onTapResult(result.name)
+                                } label: {
+                                    Text(result.name ?? "")
+                                        .font(.system(size: 14))
+                                        .foregroundColor(.bkText)
+                                }
                                 Spacer()
                                 Button {
                                     objectContext.delete(result)
@@ -60,5 +66,7 @@ struct RecentSearchView: View {
 }
 
 #Preview {
-    RecentSearchView()
+    RecentSearchView { _ in
+        
+    }
 }

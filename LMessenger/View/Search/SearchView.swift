@@ -17,8 +17,10 @@ struct SearchView: View {
             topView
             
             if viewModel.searchResults.isEmpty {
-                RecentSearchView()
-                isSearchBarFocused = true
+                RecentSearchView { text in
+                    viewModel.send(action: .setSearchText(text))
+                    isSearchBarFocused = true
+                }
             } else {
                 List {
                     ForEach(viewModel.searchResults) { result in
@@ -59,7 +61,7 @@ struct SearchView: View {
             Button {
                 viewModel.send(action: .clearSearchText)
             } label: {
-                Image("close_search")
+                Image("close_search", label: Text("검색 취소"))
             }
         }
         .padding(.horizontal, 20)
